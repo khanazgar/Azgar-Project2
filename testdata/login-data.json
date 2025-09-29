@@ -1,0 +1,40 @@
+{
+  "loginTestCases": [
+    {
+      "testCase": "Valid credentials",
+      "username": "Admin",
+      "password": "admin123",
+      "expectedResult": "success"
+    },
+    {
+      "testCase": "Invalid username",
+      "username": "invalid",
+      "password": "admin123",
+      "expectedResult": "failed"
+    },
+    {
+      "testCase": "Empty username",
+      "username": "",
+      "password": "admin123",
+      "expectedResult": "failed"
+    },
+    {
+      "testCase": "Empty password",
+      "username": "Admin",
+      "password": "",
+      "expectedResult": "failed"
+    },
+    {
+      "testCase": "Invalid password",
+      "username": "Admin",
+      "password": "wrongpassword",
+      "expectedResult": "failed"
+    },
+    {
+      "testCase": "Both fields empty",
+      "username": "",
+      "password": "",
+      "expectedResult": "failed"
+    }
+  ]
+}
